@@ -1,0 +1,53 @@
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.skeleton-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  overflow: hidden;
+}
+
+.skeleton-top {
+  height: 4px;
+  background: var(--border);
+}
+
+.skeleton-body {
+  padding: 16px 18px 18px;
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--border) 25%, var(--bg) 50%, var(--border) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  margin-bottom: 12px;
+}
+
+.skeleton-line--title {
+  width: 65%;
+  height: 16px;
+}
+
+.skeleton-line--text {
+  width: 45%;
+}
+
+.skeleton-line--badge {
+  width: 35%;
+  height: 32px;
+  margin-top: 14px;
+  margin-bottom: 0;
+  border-radius: 6px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

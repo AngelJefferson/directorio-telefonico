@@ -1,0 +1,35 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.nupkg
+packages/
+
+# VS
+.vs/
+*.sln.docstates
+
+# Vite / build
+dist/
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
